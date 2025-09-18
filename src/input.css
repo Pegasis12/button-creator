@@ -1,4 +1,19 @@
+/* apaga os imports anteriores e coloca somente esse */
 @import "tailwindcss";
+
+/* não usamos mais o tailwind config, agora tudo dentro do css input, as cores por exemplo colocamos dentro de theme */
+@theme{
+  --color-verde-200: #ECFFAB;
+  --color-verde-300: #8EFFBA;
+  --color-verde-400: #4bddb8;
+  --color-verde-700: #01FFD0;
+
+  --color-preto-200: #111111;
+  --color-preto-300: #3D3D3D;
+
+  --font-sans: 'Funnel Sans', 'system-ui', 'sans-serif';
+  --font-serif: 'Sora', 'Georgia', 'serif';
+}
 
 /* para modificar classes utilitarias como conainer se usa o utility agora */
 @utility container{
@@ -9,5 +24,27 @@
   }
   @media(width >= 96rem){
     padding: 0 8rem;
+  }
+}
+
+/* inidicando que estão na camada de componentes */
+/* o theme da versão 3 ira ficar depreciado, pra isso usamos outra solucao que é usar a variavel css, o bg-gradient tbm esta depreciado agora é bg-linear pois tem mais gradiente incluindo o radial*/
+@layer components{
+  .btn{
+    @apply py-2 px-6 rounded-md bg-verde-400 text-preto-200 cursor-pointer hover:contrast-120;
+  }
+
+  .input{
+    @apply w-full bg-slate-600 p-2 border-2 border-slate-400 rounded-sm focus:border-b-preto-200 placeholder:text-neutral-500;
+  }
+
+  .title-animate{
+    @apply text-preto-200 font-sans font-medium text-5xl md:text-8xl text-balance max-w-screen-lg mb-8;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .char{
+    transform: translateY(200px);
+    transition: transform .5s;
   }
 }
