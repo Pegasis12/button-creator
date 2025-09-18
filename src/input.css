@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* para modificar classes utilitarias como conainer se usa o utility agora */
+@utility container{
+  margin: 0 auto;
+  padding: 0 1rem;
+  @media(width >= 40rem){
+    padding: 0 1rem;
+  }
+  @media(width >= 96rem){
+    padding: 0 8rem;
+  }
+}
