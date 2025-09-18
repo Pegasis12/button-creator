@@ -9,6 +9,34 @@ const handleStyle = {
   nome(value) {
     btn.innerText = value;
   },
+
+  fontFamily(value) {
+    btn.style.fontFamily = value;
+  },
+
+  paddingTop(value) {
+    btn.style.paddingTop = value + 'px';
+  },
+
+  paddingBottom(value) {
+    btn.style.paddingBottom = value + 'px';
+  },
+
+  paddingLeft(value) {
+    btn.style.paddingLeft = value + 'px';
+  },
+
+  paddingRight(value) {
+    btn.style.paddingRight = value + 'px';
+  },
+
+  backgroundColor(value) {
+    btn.style.backgroundColor = value;
+  },
+
+  color(value) {
+    btn.style.color = value;
+  },
 };
 
 function handleChange(event) {
