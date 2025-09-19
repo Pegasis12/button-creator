@@ -37,6 +37,10 @@ const handleStyle = {
   color(value) {
     btn.style.color = value;
   },
+
+  borderStyle() {
+    btn.style.borderStyle = value;
+  },
 };
 
 function handleChange(event) {
