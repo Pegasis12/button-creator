@@ -1,36 +1,12 @@
 /* apaga os imports anteriores e coloca somente esse */
 @import "tailwindcss";
 
-/* não usamos mais o tailwind config, agora tudo dentro do css input, as cores por exemplo colocamos dentro de theme */
-@theme{
-  --color-verde-200: #ECFFAB;
-  --color-verde-300: #8EFFBA;
-  --color-verde-400: #4bddb8;
-  --color-verde-700: #01FFD0;
-
-  --color-preto-200: #111111;
-  --color-preto-300: #3D3D3D;
-
-  --font-sans: 'Funnel Sans', 'system-ui', 'sans-serif';
-  --font-serif: 'Sora', 'Georgia', 'serif';
-}
-
-/* para modificar classes utilitarias como conainer se usa o utility agora */
-@utility container{
-  margin: 0 auto;
-  padding: 0 1rem;
-  @media(width >= 40rem){
-    padding: 0 1rem;
-  }
-  @media(width >= 96rem){
-    padding: 0 8rem;
-  }
-}
-
-/* inidicando que estão na camada de componentes */
-/* o theme da versão 3 ira ficar depreciado, pra isso usamos outra solucao que é usar a variavel css, o bg-gradient tbm esta depreciado agora é bg-linear pois tem mais gradiente incluindo o radial*/
 @layer components{
   .input{
-    @apply w-full bg-slate-600 p-2 border-2 border-slate-400 rounded-sm focus:border-slate-100 focus:outline-none placeholder:text-neutral-500;
+    @apply w-full text-white bg-slate-600 p-2 border-2 border-slate-400 rounded-sm focus:border-slate-100 focus:outline-none placeholder:text-neutral-500;
+  }
+
+  .text-label{
+    @apply block text-base text-white mb-2 font-medium;
   }
 }

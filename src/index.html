@@ -6,14 +6,23 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Crie seu botão</title>
   </head>
-  <body class="grid grid-cols-[400px_1fr] bg-slate-900 h-[100vh]">
-    <aside class="bg-gray-800 p-8 border-r-2 border-slate-400 h-full">
-      <h2 class="text-2xl font-bold text-white text-center">Crie seu botão!</h2>
+  <body class="grid grid-cols-[400px_1fr] bg-gray-800 h-[100vh]">
+    <aside
+      class="bg-gray-900 p-8 border-r-2 border-slate-400 h-full overflow-auto"
+    >
+      <h1 class="text-2xl font-bold text-white text-center relative">
+        Crie seu botão!
+        <img
+          data-reset
+          class="size-6 absolute top-0 right-0 cursor-pointer"
+          src="./img/icon/reset.svg"
+          alt=""
+        />
+      </h1>
+
       <form id="controles" class="grid gap-8 mt-6">
         <div>
-          <label class="block text-md text-white mb-2 font-medium" for="name"
-            >Nome de exibição</label
-          >
+          <label class="text-label" for="name">Nome de exibição</label>
           <input
             class="input"
             type="text"
@@ -24,11 +33,7 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="fontFamily"
-            >Tipografia</label
-          >
+          <label class="text-label" for="fontFamily">Tipografia</label>
           <select
             class="w-full text-white bg-slate-600 p-2 border-2 border-slate-400 rounded-md focus:border-slate-100 focus:outline-none"
             name="fontFamily"
@@ -41,11 +46,7 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="fontSize"
-            >Tamanho da Fonte</label
-          >
+          <label class="text-label" for="fontSize">Tamanho da Fonte</label>
           <input
             class="w-full"
             type="range"
@@ -57,15 +58,24 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="paddingTop"
-            >Padding</label
+          <label class="text-label" for="fontWeight">Tipo de fonte</label>
+          <select
+            class="w-full text-white bg-slate-600 p-2 border-2 border-slate-400 rounded-md focus:border-slate-100 focus:outline-none"
+            name="fontWeight"
+            id="fontWeight"
           >
+            <option value="700">Bold</option>
+            <option value="500">Medium</option>
+            <option value="400">Regular</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="text-label" for="paddingTop">Padding</label>
           <div class="flex gap-2">
             <input
               class="input"
-              type="text"
+              type="number"
               id="paddingTop"
               name="paddingTop"
               placeholder="Top"
@@ -73,7 +83,7 @@
 
             <input
               class="input"
-              type="text"
+              type="number"
               id="paddingBottom"
               name="paddingBottom"
               placeholder="Bottom"
@@ -81,7 +91,7 @@
 
             <input
               class="input"
-              type="text"
+              type="number"
               id="paddingLeft"
               name="paddingLeft"
               placeholder="Left"
@@ -89,7 +99,7 @@
 
             <input
               class="input"
-              type="text"
+              type="number"
               id="paddingRight"
               name="paddingRight"
               placeholder="Right"
@@ -98,10 +108,8 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="backgroundColor"
-            >Back ground Color</label
+          <label class="text-label" for="backgroundColor"
+            >Background Color</label
           >
           <input
             class="h-10 w-full block border-2 border-slate-400 cursor-pointer rounded-lg focus:outline-none focus:border-slate-100"
@@ -112,9 +120,7 @@
         </div>
 
         <div>
-          <label class="block text-md text-white mb-2 font-medium" for="color"
-            >Cor do Texto</label
-          >
+          <label class="text-label" for="color">Cor do Texto</label>
           <input
             class="h-10 w-full block border-2 border-slate-400 cursor-pointer rounded-lg focus:outline-none focus:border-slate-100"
             type="color"
@@ -124,15 +130,11 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="borderStyle"
-            >Tamanho da borda</label
-          >
+          <label class="text-label" for="borderStyle">Tamanho da borda</label>
           <div class="flex gap-2">
             <input
               class="input"
-              type="text"
+              type="number"
               id="borderTop"
               name="borderTop"
               placeholder="Top"
@@ -140,7 +142,7 @@
 
             <input
               class="input"
-              type="text"
+              type="number"
               id="borderBottom"
               name="borderBottom"
               placeholder="Bottom"
@@ -148,7 +150,7 @@
 
             <input
               class="input"
-              type="text"
+              type="number"
               id="borderLeft"
               name="borderLeft"
               placeholder="Left"
@@ -156,7 +158,7 @@
 
             <input
               class="input"
-              type="text"
+              type="number"
               id="borderRight"
               name="borderRight"
               placeholder="Right"
@@ -165,11 +167,7 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="borderStyle"
-            >Tipo de borda</label
-          >
+          <label class="text-label" for="borderStyle">Tipo de borda</label>
           <select
             class="w-full text-white bg-slate-600 p-2 border-2 border-slate-400 rounded-md focus:border-slate-100 focus:outline-none"
             name="borderStyle"
@@ -183,9 +181,7 @@
         </div>
 
         <div>
-          <label class="block text-md text-white mb-2 font-medium" for="color"
-            >Cor da borda</label
-          >
+          <label class="text-label" for="color">Cor da borda</label>
           <input
             class="h-10 w-full block border-2 border-slate-400 cursor-pointer rounded-lg focus:outline-none focus:border-slate-100"
             type="color"
@@ -195,11 +191,7 @@
         </div>
 
         <div>
-          <label
-            class="block text-md text-white mb-2 font-medium"
-            for="borderRadius"
-            >Arredondamento</label
-          >
+          <label class="text-label" for="borderRadius">Arredondamento</label>
           <input
             class="w-full"
             type="range"
@@ -212,8 +204,9 @@
       </form>
     </aside>
 
-    <section class="grid">
-      <div class="place-self-center">
+    <section class="grid place-self-center" aria-label="Preview">
+      <h1 class="text-white text-4xl font-bold text-center">Preview</h1>
+      <div class="justify-self-center mt-20">
         <button
           data-button
           class="bg-slate-400 px-12 py-4 rounded-md text-slate-100 font-bold uppercase"
@@ -222,8 +215,22 @@
         </button>
       </div>
 
-      <div class="place-self-center">
-        <pre><code data-text class="">test</code></pre>
+      <div class="justify-self-center min-w-[600px] mt-20">
+        <div
+          class="rounded-t-md p-2 bg-neutral-950 border border-neutral-600 flex justify-between items-center"
+        >
+          <p class="text-neutral-500">CSS</p>
+          <img
+            width="512"
+            height="512"
+            class="size-4"
+            src="./img/icon/copy.svg"
+            alt=""
+          />
+        </div>
+        <pre
+          class="p-2 bg-neutral-800 rounded-b-md border-x border-b border-neutral-600 min-h-10"
+        ><code data-text class="text-blue-300"></code></pre>
       </div>
     </section>
     <script type="module" src="./js/script.js"></script>
