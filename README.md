@@ -3,7 +3,7 @@
 Um pequeno projeto interativo feito com **HTML, JavaScript** e **Tailwind CSS**, cujo objetivo é permitir a criação de botões personalizados em tempo real.  
 O usuário pode ajustar propriedades como tipografia, cor, borda, padding, arredondamento e muito mais.
 
-Este projeto foi inspirado e construído como exercício prático a partir do curso **["JavaScript: Efeitos no DOM"](https://www.origamid.com/curso/javascript-efeitos-no-dom/)** da Origamid, onde a ideia central é manipular o DOM e salvar estados no navegador.  
+Este projeto foi inspirado e construído como exercício prático a partir do curso **["JavaScript: Efeitos no DOM"](https://www.origamid.com/)** da Origamid, onde a ideia central é manipular o DOM e salvar estados no navegador.  
 O **design foi feito em Tailwind CSS**, o que acelerou bastante o desenvolvimento da interface.
 
 Acesse o projeto online: [button-creator-beta.vercel.app](https://button-creator-beta.vercel.app/)
