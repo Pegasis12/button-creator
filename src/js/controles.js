@@ -38,11 +38,40 @@ const handleStyle = {
     btn.style.color = value;
   },
 
-  borderStyle() {
+  borderStyle(value) {
     btn.style.borderStyle = value;
+  },
+
+  borderTop(value) {
+    btn.style.borderTop = value + 'px';
+  },
+
+  borderBottom(value) {
+    btn.style.borderBottom = value + 'px';
+  },
+
+  borderLeft(value) {
+    btn.style.borderLeft = value + 'px';
+  },
+
+  borderRight(value) {
+    btn.style.borderRight = value + 'px';
+  },
+
+  borderColor(value) {
+    btn.style.borderColor = value;
+  },
+
+  borderRadius(value) {
+    btn.style.borderRadius = value + 'px';
+  },
+
+  fontSize(value) {
+    btn.style.fontSize = value + 'px';
   },
 };
 
 function handleChange(event) {
   handleStyle[event.target.name](event.target.value);
+  console.log(event.target.value);
 }

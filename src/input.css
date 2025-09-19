@@ -31,6 +31,6 @@
 /* o theme da versão 3 ira ficar depreciado, pra isso usamos outra solucao que é usar a variavel css, o bg-gradient tbm esta depreciado agora é bg-linear pois tem mais gradiente incluindo o radial*/
 @layer components{
   .input{
-    @apply w-full bg-slate-600 p-2 border-2 border-slate-400 rounded-sm focus:border-slate-100 focus:outline-none placeholder:text-neutral-500; 
+    @apply w-full bg-slate-600 p-2 border-2 border-slate-400 rounded-sm focus:border-slate-100 focus:outline-none placeholder:text-neutral-500;
   }
 }
