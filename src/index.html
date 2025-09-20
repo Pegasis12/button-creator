@@ -6,9 +6,9 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Crie seu botão</title>
   </head>
-  <body class="grid grid-cols-[400px_1fr] bg-gray-800 h-[100vh]">
+  <body class="grid lg:grid-cols-[400px_1fr] bg-gray-800 h-[100vh]">
     <aside
-      class="bg-gray-900 p-8 h-full overflow-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-slate-600 [&::-webkit-scrollbar-thumb]:bg-slate-700"
+      class="bg-gray-900 p-8 max-md:max-h-96 lg:h-full overflow-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-slate-600 [&::-webkit-scrollbar-thumb]:bg-slate-700"
     >
       <h1 class="text-2xl font-bold text-white text-center relative">
         Crie seu botão!
@@ -217,7 +217,7 @@
       </form>
     </aside>
 
-    <section class="grid place-self-center" aria-label="Preview">
+    <section class="grid lg:place-self-center container" aria-label="Preview">
       <h1 class="text-white text-4xl font-bold text-center">Preview</h1>
       <div class="justify-self-center mt-20">
         <button
@@ -234,7 +234,7 @@
         </button>
       </div>
 
-      <div class="justify-self-center min-w-[600px] mt-20">
+      <div class="justify-self-center min-w-[400px] lg:min-w-[600px] mt-20">
         <div
           class="rounded-t-md p-2 bg-neutral-950 border border-neutral-600 flex justify-between items-center"
         >

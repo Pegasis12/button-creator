@@ -1,6 +1,17 @@
 /* apaga os imports anteriores e coloca somente esse */
 @import "tailwindcss";
 
+@utility container{
+  margin: 0 auto;
+  padding: 0 1rem;
+  @media(width >= 40rem){
+    padding: 0 1rem;
+  }
+  @media(width >= 96rem){
+    padding: 0 8rem;
+  }
+}
+
 @layer components{
   .input{
     @apply w-full text-white bg-slate-600 p-2 border-2 border-slate-400 rounded-sm focus:border-slate-100 focus:outline-none placeholder:text-neutral-500;
